@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login</title>
+    <meta charset="utf-8">
+
+    <script src="./function/functionLogin.js"></script>
+<body>
+    <h1>Page de connexion !</h1>
+    <form>
+        <h2 id="tested-true" style="color: green;"></h2>
+        <h2 id="tested-false" style="color: red;"></h2>
+        <strong>Nom d'utilisateur :</strong><br>
+        <input type="text" id="nom-utilisateur" name="input_name" value="">
+        <br><br>
+        <strong>Adresse mail :</strong><br>
+        <input type="email" id="adresse-mail" name="input_email" value=""><br>
+        <br><br>
+        <strong>Mot de passe :</strong><br>
+        <input type="password" id="mot-de-passe" name="input_password" value=""><br>
+        <br><br>
+        <input type="button" id="bouton" value="Valider" onclick="verifLogin()">
+    </form>
+</body>
+</html>
