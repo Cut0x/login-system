@@ -4,25 +4,39 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Login</title>
-    <meta charset="utf-8">
 
+    <title>Login</title>
+    
     <script src="./function/functionLogin.js"></script>
+    <link rel="stylesheet" href="./css/style.css">
 <body>
-    <h1>Page de connexion !</h1>
     <form>
-        <h2 id="tested-true" style="color: green;"></h2>
-        <h2 id="tested-false" style="color: red;"></h2>
-        <strong>Nom d'utilisateur :</strong><br>
-        <input type="text" id="nom-utilisateur" name="input_name" value="">
-        <br><br>
-        <strong>Adresse mail :</strong><br>
-        <input type="email" id="adresse-mail" name="input_email" value=""><br>
-        <br><br>
-        <strong>Mot de passe :</strong><br>
-        <input type="password" id="mot-de-passe" name="input_password" value=""><br>
-        <br><br>
-        <input type="button" id="bouton" value="Valider" onclick="verifLogin()">
+        <div class="text">
+            <h1>Page de connexion !</h1>
+            <h3 id="true" style="color: green;"></h3>
+            <h3 id="false" style="color: red;"></h3>
+        </div>
+        <div class="username">
+            <p>
+                <strong>Nom d'utilisateur :</strong>
+            </p>
+            <input type="text" id="nom-utilisateur" name="input_name" value="">
+        </div>
+        <div class="adressemail">
+            <p>
+                <strong>Adresse Mail :</strong>
+            </p>
+            <input type="email" id="adresse-mail" name="input_email" value=""><br>
+        </div>
+        <div class="mdp-compte">
+            <p>
+                <strong>Mot De Passe :</strong>
+            </p>
+            <input type="password" id="mot-de-passe" name="input_password" value=""><br>
+        </div><br>
+        <div class="validation">
+            <input type="button" id="bouton" value="Valider" onclick="verifLogin()">
+        </div>
     </form>
 </body>
 </html>
